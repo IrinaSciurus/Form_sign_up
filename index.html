@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+
+</head>
+
+<body>
+	<div id="register">
+		<form autocomplete="on">
+			<h1> SIGN UP </h1>
+			<hr />
+			<div class="list_form">
+				<p class="item">
+					<label for="username" class="uname">First Name</label>
+					<input class="user_input" required="required" type="text" placeholder="" maxlength="20" />
+				</p>
+				<p class="item">
+					<label for="username" class="uname">Last Name</label>
+					<input class="user_input" name="username" required="required" type="text" placeholder=""
+						maxlength="20" />
+				</p>
+				<p>
+					<label for="usergender" class="ugender">Gender</label>
+					<input class="user_gender" name="ugender" required="required" type="radio" value="1" class="" />Male
+					<input class="user_gender" name="ugender" required="required" type="radio" value="2" class="" />Female
+				</p>
+				<p>
+					<label for="date_of_birth" class="ubirth">Birthday</label>
+					<input class="user_input_item" name="dateofbirth" required="required" type="date" />
+				</p>
+				<p>
+					<label for="city" class="ucity">City</label>
+					<select class="user_input_item" name='city'>
+						<option value="1">Moscow</option>
+						<option value="2">St. Petersburg</option>
+						<option value="3">New York</option>
+						<option value="4">Frankfurt</option>
+						<option value="5">Paris</option>
+					</select>
+				</p>
+				<p class="item">
+					<label for="email" class="youmail">E-mail</label>
+					<input class="user_input" name="useremail" required="required" type="email" placeholder=""
+						maxlength="20" />
+				</p>
+				<p class="item">
+					<label for="userlogin" class="userlogin">Login</label>
+					<input class="user_input" name="userlogin" required="required" type="text" placeholder=""
+						maxlength="10" />
+				</p>
+				<p class="item">
+					<label for="userpassword" class="upasswd">Password </label>
+					<input class="user_input" name="userpassword" required="required" type="password" placeholder=""
+						maxlength="15" />
+				</p>
+			</div>
+			<p>
+				<input class="user_confirm" name="user_confirm" required="required" type="checkbox" />
+				<label for="user_confirm" class="user_confirm">By signing up, I agree to have read and accepted the
+					terms of use privacy policy. </label>
+			</p>
+			<p class="btn_signin">
+				<input type="submit" value="Sign in" />
+			</p>
+			<p class="change_link">
+				Already a user?
+				<button class="btn_login">Login</button>
+			</p>
+		</form>
+	</div>
+</body>
+
+</html>
